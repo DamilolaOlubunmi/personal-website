@@ -1,35 +1,66 @@
 <html>
     <head>
-        <link rel="stylesheet" href="./ titleSection/titlesection.css">
+        <link rel="stylesheet" href="./titleSection/titlesection.css">
+        <link rel="stylesheet" href="./aboutmesection/aboutmesection.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Armata">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     </head>
 <body>
-    <div class = "main-section" id="title">
-        <h1>Welcome to Dami's Website</h1>
-        <p>This is where dreams come true</p>
-        <button class="title-section-button" onclick="makeDreamComeTrue()">Make dream come true</button>
+    <div class="main-section" id="title">
+        <h1 class="title-section-header">Dami Olubunmi</h1>
+        <p class="title-section-subtitle">Empowering Individuals Through Education</p>
+        <button class="title-section-button" onclick="makeDreamComeTrue()">COMBINE KNOWLEDGE WITH ACTION</button>
+    </div>
+    <div class="misc-section" id = "aboutme">
+        <div class="text-block-container">
+            <h1>About Me</h1>
+            <p class = "aboutme-section-description">
+                I am a Computer Science student, passionate about leveraging technology to solve real-world problems. 
+                With a strong foundation in programming and software development, I aspire to create innovative solutions that enhance everyday life. 
+                Beyond academics, I enjoy exploring new technologies, working on computer networking, 
+                and engaging with the tech community to stay updated on industry trends.
+            </p>
+            <div class="aboutme-icons">
+                <i class="aboutme-icon fab fa-linkedin-in"></i>
+                <i class="aboutme-icon fab fa-instagram"></i>
+                <i class="aboutme-icon fab fa-facebook-square"></i>
+                <i class="aboutme-icon far fa-envelope"></i>
+            </div>
+        </div>
     </div>
 </body>
 <style>
     * {
-    box-sizing: border-box;
-    font-family: 'Armata';
+        box-sizing: border-box;
+        font-family: 'Armata';
     }
 
     html, body {
-    margin: 0px;
-    padding: 0px;
-    }
-
-    body {
-        background-image: url('https://iso.500px.com/wp-content/uploads/2014/07/big-one.jpg');
-        background-size: cover;
+        margin: 0px;
+        padding: 0px;
     }
 
     .main-section {
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        padding: 25px;
+    }
+
+    .misc-section {
+        width: 100vw;
+        padding: 120px 25px;
+    }
+
+    .text-block-container {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 500px) {
+        .text-block-container {
+            width: 100%;
+        }
     }
 </style>
 <script>
