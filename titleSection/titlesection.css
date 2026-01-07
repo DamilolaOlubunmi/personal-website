@@ -1,13 +1,37 @@
-h1 {
-        color: blue;
-    }
-    button:hover {
-        background-color: red;
-        cursor: pointer;
-        font-size: 20px;
-    }
-    #title {
-        width: 100%;
-        text-align: center;
-        margin-top: 50px;
-    }
+:root {
+  --titleSectionPrimaryColor: rgb(255, 255, 255);
+  --titleSectionSecondaryColor: rgb(224, 170, 160);
+  --titleSectionTertiaryColor: rgb(157, 172, 178);
+
+}
+
+#title {
+  color: var(--titleSectionPrimaryColor);
+  text-align: center;
+  padding-top: 200px;
+  background-image: url(../images/DesertArt.jpg);
+  background-position: center top;
+}
+
+.title-section-header {
+    margin-bottom: -5px;
+}
+
+.title-section-subtitle {
+    margin-bottom: 40px;
+}
+
+.title-section-button {
+  background-color: var(--titleSectionPrimaryColor);
+  color: var(--titleSectionPrimaryColor);
+  border: solid var(--titleSectionPrimaryColor) 1px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  background-color: transparent;
+}
+
+.title-section-button:hover {
+    background-color: var(--titleSectionPrimaryColor);
+    color: var(--titleSectionSecondaryColor);
+    cursor: pointer;
+}
